@@ -7,7 +7,7 @@ use MoonShine\Menu\MenuItem;
 use MoonShine\Resources\CustomPage;
 use Sweet1s\MoonShineDatabase\Http\Controllers\MoonShineDatabaseController;
 
-class Database
+class DatabaseItem
 {
     public static function make(): MenuItem
     {
