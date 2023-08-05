@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MoonShineDatabaseServiceProvider"
+                "Sweet1s\\MoonshineDatabase\\Providers\\MoonShineDatabaseServiceProvider"
             ]
         }
     }
