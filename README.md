@@ -24,20 +24,28 @@ complex SQL queries or external tools.
 
 1. Install the package via composer:
 
-    ```bash
-    composer require sweet1s/moonshine-database
-    ```
+```bash
+composer require sweet1s/moonshine-database
+```
 
 2. Publish the configuration file:
 
-    ```bash
-    php artisan vendor:publish --provider="Sweet1s\MoonShineDatabase\Providers\MoonShineDatabaseServiceProvider" --tag="config"
-    ```
+```bash
+php artisan vendor:publish --provider="Sweet1s\MoonShineDatabase\Providers\MoonShineDatabaseServiceProvider"
+```
 
 3. Add the item to your MoonShineServiceProvider file, like this:
-    ```php
-    \Sweet1s\MoonShineDatabase\Menu\Database::make()
-    ```
+
+```php
+public function boot(): void
+    {
+        app(MoonShine::class)->menu([
+            ...
+            \Sweet1s\MoonShineDatabase\Menu\DatabaseItem::make(),
+            ...
+        ]);
+    }
+```
 
 ---
 
