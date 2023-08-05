@@ -81,7 +81,7 @@ class AuthServiceProvider extends ServiceProvider
                 // Here you can implement your own authorization logic
 
                 // I use spatie/laravel-permission package, so I can do like this:
-                reutrn $user->role->hasPermissionTo($value);
+                return $user->role->hasPermissionTo($value);
             });
         }
     }
