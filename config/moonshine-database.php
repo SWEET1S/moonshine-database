@@ -21,7 +21,7 @@ return [
      * The "enable" parameter determines the functionality of the authorization.
      *
      * The "permissions" parameter indicates which permissions the package is currently utilizing.
-     *  Permissions cannot be deleted; their values can only be edited.
+     * Permissions cannot be deleted; their values can only be edited.
      */
 
     'auth' => [
