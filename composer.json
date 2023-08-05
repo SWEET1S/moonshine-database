@@ -1,19 +1,19 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": "Description",
-    "keywords": ["keyword"],
+    "name": "sweet1s/moonshine-database",
+    "description": "Moonshine Database",
+    "keywords": ["laravel", "moonshine", "database"],
     "type": "library",
     "homepage": "https://moonshine.cutcode.dev",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/:vendor_name/:package_name/issues",
-        "source": "https://github.com/:vendor_name/:package_name"
+        "issues": "https://github.com/sweet1s/moonshine-database/issues",
+        "source": "https://github.com/sweet1s/moonshine-database"
     },
     "authors": [
         {
-            "name": "Author name",
-            "email": "author@example.com",
-            "homepage": "https://example.com"
+            "name": "Andrei Balan",
+            "email": "abalan1510it@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -30,13 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\PackageName\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "VendorName\\PackageName\\Tests\\": "tests/",
-            "VendorName\\PackageName\\Database\\Factories\\": "database/factories/"
+            "Sweet1s\\MoonShineDatabase\\": "src/"
         }
     },
     "conflict": {
@@ -49,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\PackageName\\Providers\\PackageNameServiceProvider"
+                "MoonShineDatabaseServiceProvider"
             ]
         }
     }
